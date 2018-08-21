@@ -15,7 +15,8 @@ defmodule Indexer.BlockFetcher.Catchup do
     BlockFetcher,
     InternalTransactionFetcher,
     Sequence,
-    TokenFetcher
+    TokenFetcher,
+    TokenBalanceFetcher
   }
 
   @behaviour BlockFetcher
@@ -112,7 +113,12 @@ defmodule Indexer.BlockFetcher.Catchup do
   end
 
   defp async_import_remaining_block_data(
-         %{transactions: transaction_hashes, addresses: address_hashes, tokens: tokens},
+         %{
+           transactions: transaction_hashes,
+           addresses: address_hashes,
+           tokens: tokens,
+           token_balances: token_balances
+         },
          %{
            address_hash_to_fetched_balance_block_number: address_hash_to_block_number,
            transaction_hash_to_block_number: transaction_hash_to_block_number
@@ -135,6 +141,8 @@ defmodule Indexer.BlockFetcher.Catchup do
     tokens
     |> Enum.map(& &1.contract_address_hash)
     |> TokenFetcher.async_fetch()
+
+    TokenBalanceFetcher.async_fetch(token_balances)
   end
 
   defp stream_fetch_and_import(%__MODULE__{blocks_concurrency: blocks_concurrency} = state, sequence)
