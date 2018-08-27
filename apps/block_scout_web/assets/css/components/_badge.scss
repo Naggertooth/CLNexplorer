@@ -1,3 +1,11 @@
 .badge {
   color: $white;
 }
+
+.badge.badge-full-size-text {
+  font-size: 100%;
+}
+
+.badge.badge-padded {
+  padding: .5em 1em;
+}

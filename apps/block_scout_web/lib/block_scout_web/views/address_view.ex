@@ -96,4 +96,16 @@ defmodule BlockScoutWeb.AddressView do
       )
     end
   end
+
+  @doc """
+  Returns the primary name of an address if available.
+  """
+  def primary_name(%Address{names: [_ | _] = address_names}) do
+    case Enum.find(address_names, &(&1.primary == true)) do
+      nil -> nil
+      %Address.Name{name: name} -> name
+    end
+  end
+
+  def primary_name(%Address{names: _}), do: nil
 end

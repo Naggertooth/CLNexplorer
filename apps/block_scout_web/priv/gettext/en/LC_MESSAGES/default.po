@@ -44,7 +44,7 @@ msgstr "Height"
 msgid "BlockScout"
 msgstr "BlockScout"
 
-#: lib/block_scout_web/templates/address/overview.html.eex:21
+#: lib/block_scout_web/templates/address/overview.html.eex:25
 #: lib/block_scout_web/templates/address_contract/index.html.eex:10
 #: lib/block_scout_web/templates/address_internal_transaction/index.html.eex:13
 #: lib/block_scout_web/templates/address_internal_transaction/index.html.eex:55
@@ -613,7 +613,7 @@ msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/address/overview.html.eex:13
-#: lib/block_scout_web/templates/address/overview.html.eex:66
+#: lib/block_scout_web/templates/address/overview.html.eex:70
 msgid "QR Code"
 msgstr ""
 
@@ -640,12 +640,12 @@ msgid "Contract Call"
 msgstr ""
 
 #, elixir-format
-#: lib/block_scout_web/templates/address/overview.html.eex:25
+#: lib/block_scout_web/templates/address/overview.html.eex:29
 msgid "Contract created by"
 msgstr ""
 
 #, elixir-format
-#: lib/block_scout_web/templates/address/overview.html.eex:36
+#: lib/block_scout_web/templates/address/overview.html.eex:40
 msgid "at"
 msgstr ""
 
@@ -700,7 +700,7 @@ msgid "Block Height #%{height}"
 msgstr ""
 
 #, elixir-format
-#: lib/block_scout_web/templates/address/overview.html.eex:75
+#: lib/block_scout_web/templates/address/overview.html.eex:79
 msgid "Close"
 msgstr ""
 
