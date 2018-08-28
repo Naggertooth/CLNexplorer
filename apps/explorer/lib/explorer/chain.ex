@@ -485,7 +485,7 @@ defmodule Explorer.Chain do
     query =
       from(
         address in Address,
-        preload: [:smart_contract, :contracts_creation_internal_transaction, :names],
+        preload: [:contracts_creation_internal_transaction, :names, :smart_contract],
         where: address.hash == ^hash
       )
 
