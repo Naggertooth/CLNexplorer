@@ -23,6 +23,9 @@ npm-debug.log
 # this depending on your deployment strategy.
 /apps/*/priv/static/
 
+#Ignoring log files
+/apps/*/logs
+
 # Files matching config/*.secret.exs pattern contain sensitive
 # data and you should not commit them into version control.
 #
