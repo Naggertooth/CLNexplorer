@@ -12,7 +12,7 @@ msgid "Blocks"
 msgstr ""
 
 #: lib/block_scout_web/templates/layout/_footer.html.eex:15
-msgid "Copyright %{year} POA"
+msgid "Copyright %{year} CLN"
 msgstr ""
 
 #: lib/block_scout_web/templates/block/_tile.html.eex:39

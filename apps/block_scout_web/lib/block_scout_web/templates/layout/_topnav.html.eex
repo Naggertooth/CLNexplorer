@@ -36,11 +36,11 @@
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <%= gettext("Mainnet") %>
+            <%= gettext("CLNnet") %>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="https://sokol.blockscout.com/"><%= gettext("POA Sokol") %></a>
-            <a class="dropdown-item" href="https://poa.blockscout.com/"><%= gettext("POA Core") %></a>
+            <a class="dropdown-item" href="https://poa.blockscout.com/"><%= gettext("CLNnet") %></a>
+            <a class="dropdown-item" href="https://sokol.blockscout.com/"><%= gettext("Mainnet") %></a>
           </div>
         </li>
       </ul>
