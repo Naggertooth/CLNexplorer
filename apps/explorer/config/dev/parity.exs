@@ -5,10 +5,10 @@ config :explorer,
     transport: EthereumJSONRPC.HTTP,
     transport_options: [
       http: EthereumJSONRPC.HTTP.HTTPoison,
-      url: "https://sokol.poa.network",
+      url: "http://etheth653-dns-reg1.westeurope.cloudapp.azure.com:8540",
       method_to_url: [
-        eth_getBalance: "https://sokol-trace.poa.network",
-        trace_replayTransaction: "https://sokol-trace.poa.network"
+        eth_getBalance: "http://etheth653-dns-reg1.westeurope.cloudapp.azure.com:8540",
+        trace_replayTransaction: "http://etheth653-dns-reg1.westeurope.cloudapp.azure.com:8540"
       ],
       http_options: [recv_timeout: 60_000, timeout: 60_000, hackney: [pool: :ethereum_jsonrpc]]
     ],
